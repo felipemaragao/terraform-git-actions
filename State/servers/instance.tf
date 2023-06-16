@@ -1,6 +1,6 @@
 resource "aws_key_pair" "main"{
   key_name = "felipe-keypair"
-  public_key = ""
+  public_key = "SHA256:w89jHEH8NCczVwUfzQeXbmn6gb/rduRkigBnTCc+8TA"
 }
 
 
