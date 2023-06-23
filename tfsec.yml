@@ -1,0 +1,7 @@
+severity_overrides:
+  CUS002: ERROR
+  aws-s3-enable-versioning: HIGH
+  ---
+exclude:
+  - CUS002
+  - aws-s3-enable-versioning
