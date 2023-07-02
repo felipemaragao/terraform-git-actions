@@ -1,4 +1,4 @@
-name: tfsec
+name: terraform
 on:
   push:
     branches:
@@ -31,8 +31,10 @@ jobs:
         with:
           # Path to SARIF file relative to the root of the repository
           sarif_file: tfsec.sarif     
+          
   docs:
     runs-on: ubuntu-latest
+    needs: tfsec
     steps:
     - uses: actions/checkout@v3
       with:
